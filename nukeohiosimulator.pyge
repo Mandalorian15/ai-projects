@@ -1,0 +1,18 @@
+def nuke_ohio():
+  # Set the correct combination
+  combination = [123]
+
+  # Prompt the user to enter their guess
+  guess = input("Enter your guess for the 3-number combination: ")
+
+  # Convert the input into a list of integers
+  guess = [int(x) for x in guess.split()]
+
+  # Check if the guess is correct
+  if guess == combination:
+    print("Congratulations, you nuked Ohio!")
+  else:
+    print("Sorry, that's not the correct combination.")
+
+# Call the function to start the game
+nuke_ohio()
